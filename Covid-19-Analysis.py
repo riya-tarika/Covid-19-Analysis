@@ -57,7 +57,6 @@ root.geometry('500x500')
 
 #creating the object for taking input
 country=tk.StringVar()
-c=Canvas(root,height=1000)
 #creating the label widget
 l=tk.Label(root,text='Country',fg='White',bg='green').place(x=10,y=7.5)
 
@@ -67,6 +66,6 @@ e=tk.Entry(root,bd=5,textvariable=country).place(x=75,y=5)
 #creating Check,graph,quit Buttons
 b1=tk.Button(root,text='Check',command=show,fg="brown",activeforeground = "red",activebackground = "yellow",pady=10).place(x=90,y=40)
 b3=tk.Button(root,text='Quit',command=root.destroy,fg="brown",activeforeground = "red",activebackground = "yellow",pady=10).place(x=150,y=40)
-c.pack()
+
 #initialize the frame
 root.mainloop()
